@@ -1,40 +1,34 @@
 const students = [
-  // {
-  //   id: 1,
-  //   name: "Harry Potter",
-  //   house: "Gryffindor",
-  //   imageUrl: ""
-  // },
-  // {
-  //   id: 2,
-  //   name: "Draco Malfoy",
-  //   house: "Slytherin",
-  //   imageUrl: ""
-  // },
-  // {
-  //   id: 3,
-  //   name: "Cedric Diggery",
-  //   house: "Hufflepuff",
-  //   imageUrl: ""
-  // },
-  // {
-  //   id: 4,
-  //   name: "Cho Chang",
-  //   house: "Ravenclaw",
-  //   imageUrl: ""
-  // },
-  // {
-  //   id: 5,
-  //   name: "Neville Longbottom",
-  //   house: "Gryffindor",
-  //   imageUrl:""
-  // },
-  // {
-  //   id: 6,
-  //   name: "Luna Lovegood",
-  //   house: "Ravenclaw",
-  //   imageUrl:""
-  // }
+  {
+    id: 1,
+    name: "Harry Potter",
+    house: "Gryffindor"
+  },
+  {
+    id: 2,
+    name: "Draco Malfoy",
+    house: "Slytherin"
+  },
+  {
+    id: 3,
+    name: "Cedric Diggery",
+    house: "Hufflepuff"
+  },
+  {
+    id: 4,
+    name: "Cho Chang",
+    house: "Ravenclaw"
+  },
+  {
+    id: 5,
+    name: "Neville Longbottom",
+    house: "Gryffindor"
+  },
+  {
+    id: 6,
+    name: "Luna Lovegood",
+    house: "Ravenclaw"
+  }
 ]
 
 const expelledStudents = []
@@ -45,7 +39,6 @@ const houseButtons = document.querySelector("#house-buttons")
 const form = document.querySelector("form")
 
 document.querySelector("#show").style.display="block"
-
 function sortFirst() {
   document.querySelector("#sort").style.display = "";
 }
@@ -118,16 +111,56 @@ houseButtons.addEventListener("click", (event) => {
   const id = event.target.id
   const possibleHouses = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
 
-  // if(id === "All"){
-  //   renderToDom(students)
-  if (id === "Gryffindor"){
-    filter(id)
-  } else if (id === "Slytherin"){
-    filter(id)
-  } else if (id === "Hufflepuff"){
-    filter(id)
-  } else if (id === "Ravenclaw")
-    filter(id)
+  if(id === "All"){
+    renderToDom(students)
+  } else if (possibleHouses.includes(id)){
+    filter(id)}
+
+
+  //   const filter1 = () => {
+  //   const gryffindorArray = []
+
+  //   students.filter(house => {
+  //    if (students.house === "Gryffindor"){
+  //       gryffindorArray.push(house)
+  //     }
+  //   })
+  //   renderToDom(gryffindorArray)
+  // }
+  
+  //   const filter2 = () => {
+  //   const slytherinArray = []
+
+  //   students.filter(house => {
+  //   if (students.house === "Slytherin"){
+  //       slytherinArray.push(house)
+  //     }
+  //   })
+  //   renderToDom(gryffindorArray)
+  // }
+
+  //   const filter3 = () => {
+  //   const hufflepuffArray = []
+
+  //   students.filter(house => {
+  //   if (students.house === "Hufflepuff"){
+  //     hufflepuffArray.push(house)
+  //     }
+  //   })
+  //   renderToDom(hufflepuffArray)
+  // }
+
+  //   const filter4 = () => {
+  //   const ravenclawArray = []
+
+  //   students.filter(house => {
+  //   if (students.house === "Ravenclaw"){
+  //     ravenclawArray.push(house)
+  //     }
+  //   })
+  //   renderToDom(ravenclawArray)
+  // }
+  
 })
 
 form.addEventListener("submit", (event) => {
