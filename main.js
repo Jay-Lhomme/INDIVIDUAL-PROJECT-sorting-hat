@@ -68,11 +68,9 @@ app.addEventListener("click", (event) => {
 
     const index = students.findIndex(student => student.id === Number(id))
 
-    students.splice(index, 1)
+    expelledStudents.push(...students.splice(index, 1))
 
     renderToDom(students)
-
-    expelledStudents.push(...students.splice(index, 1))
     
     renderToDarkDom(expelledStudents) 
   }
@@ -99,13 +97,12 @@ const filter = (house) => {
   const houseArray = []
 
   students.filter(house => {
-    if (students.house === house) {
+   if (students.house === house) {
       houseArray.push(house)
     }
   })
  renderToDom(houseArray)
 }
-
 
 houseButtons.addEventListener("click", (event) => {
   const id = event.target.id
