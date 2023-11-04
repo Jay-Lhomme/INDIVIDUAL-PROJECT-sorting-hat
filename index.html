@@ -11,7 +11,10 @@
   <h1>Welcome to Hogwarts</h1>
 
   <div id="show">
-  <button onclick="sortFirst()" class="btn btn-primary">Sort</button>
+
+    <div id="sorting-hat">
+    <button i onclick="sortFirst()" class="btn btn-info">Sorting Hat</button>
+    </div>
     
     <div id="sort" style="display:none">
     <form id="form">
@@ -25,29 +28,29 @@
         <input id="studentName" type="text" placeholder="Harry Potter" class="form-control" required>
         </div>
       
-        <div class="col-auto">
-          <button  type="submit" class="btn btn-primary mb-3">Sort</button>
+        <div id="sort-button" class="col-auto">
+          <button  type="submit" class="btn btn-info mb-3">Sort</button>
         </div>
 
       </div>  
     </form>
        
     <div id="house-buttons">
-        <button type="button" id="All">All</button>
-        <button type="button" id="Gryffindor">Gryffindor</button>
-        <button type="button" id="Slytherin">Slytherin</button>
-        <button type="button" id="Hufflepuff">Hufflepuff</button>
-        <button type="button" id="Ravenclaw">Ravenclaw</button>
+        <button type="button" id="All" class="btn btn-secondary btn-lg">All</button>
+        <button type="button" id="Gryffindor" class="btn btn-danger btn-lg">Gryffindor</button>
+        <button type="button" id="Slytherin" class="btn btn-success btn-lg">Slytherin</button>
+        <button type="button" id="Hufflepuff" class="btn btn-warning btn-lg">Hufflepuff</button>
+        <button type="button" id="Ravenclaw" class="btn btn-primary btn-lg">Ravenclaw</button>
     </div>
 
    <div id="students">
     <div id="app">
-      <h2>Students</h2>
+      <h2>First Years</h2>
     </div>
    
 
     <div id="hiddenApp">
-      <h2>Dark Army</h2>
+      <h2><b>Dark Army</b></h2>
     </div>
    </div>
 

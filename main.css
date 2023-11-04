@@ -8,21 +8,21 @@ img {
 
 .Gryffindor {
   /* background-image: url("https://images.unsplash.com/photo-1518709779341-56cf4535e94b?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHJlZHxlbnwwfHwwfHx8MA%3D%3D"); */
-  background-color: red;
+  background-color: rgba(241, 27, 12, 0.977);
 }
 .Ravenclaw {
   /* background-image: url("https://images.unsplash.com/photo-1530533718754-001d2668365a?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsdWV8ZW58MHx8MHx8fDA%3D"); */
-  background-color: rgb(64, 64, 245);
+  background-color: rgb(49, 97, 211);
 }
 
 .Slytherin {
   /* background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW58ZW58MHx8MHx8fDA%3D") ; */
-  background-color: green;
+  background-color: rgb(18, 132, 18);
 }
 
 .Hufflepuff {
   /* background-image: url("https://images.unsplash.com/photo-1508808787069-421e7986016e?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8eWVsbG93fGVufDB8fDB8fHww"); */
-  background-color: yellow;
+  background-color: rgb(255, 191, 0);
 }
 
 #app {
@@ -34,5 +34,51 @@ img {
 }
 
 #students {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  min-height: 700px
+}
 
+#house-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9px;
+}
+
+h1{
+  text-align:  center;
+}
+
+#sorting-hat {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  display: flex;
+  margin: auto auto;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#hiddenApp {
+  display: flex;
+  margin: auto auto;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card-title{
+  font-weight: bolder;
+}
+
+#sort-button {
+  display: flex;
+  margin-top: 32px
 }

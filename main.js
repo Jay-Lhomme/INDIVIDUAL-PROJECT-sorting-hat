@@ -1,34 +1,34 @@
 const students = [
-  {
-    id: 1,
-    name: "Harry Potter",
-    house: "Gryffindor"
-  },
-  {
-    id: 2,
-    name: "Draco Malfoy",
-    house: "Slytherin"
-  },
-  {
-    id: 3,
-    name: "Cedric Diggery",
-    house: "Hufflepuff"
-  },
-  {
-    id: 4,
-    name: "Cho Chang",
-    house: "Ravenclaw"
-  },
-  {
-    id: 5,
-    name: "Neville Longbottom",
-    house: "Gryffindor"
-  },
-  {
-    id: 6,
-    name: "Luna Lovegood",
-    house: "Ravenclaw"
-  }
+  // {
+  //   id: 1,
+  //   name: "Harry Potter",
+  //   house: "Gryffindor"
+  // },
+  // {
+  //   id: 2,
+  //   name: "Draco Malfoy",
+  //   house: "Slytherin"
+  // },
+  // {
+  //   id: 3,
+  //   name: "Cedric Diggery",
+  //   house: "Hufflepuff"
+  // },
+  // {
+  //   id: 4,
+  //   name: "Cho Chang",
+  //   house: "Ravenclaw"
+  // },
+  // {
+  //   id: 5,
+  //   name: "Neville Longbottom",
+  //   house: "Gryffindor"
+  // },
+  // {
+  //   id: 6,
+  //   name: "Luna Lovegood",
+  //   house: "Ravenclaw"
+  // }
 ]
 
 const expelledStudents = []
@@ -51,7 +51,7 @@ const renderToDom = (array) => {
     <div class="card-body">
     <h5 class="card-title">${student.name}</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">${student.house}</h6>
-    <a href="#" class="btn btn-danger" id="expel--${student.id}">Expel</a>
+    <a href="#" class="btn btn-dark" id="expel--${student.id}">Expel</a>
         </div>
       </div>
     </div>
