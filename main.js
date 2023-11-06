@@ -1,34 +1,34 @@
 const students = [
-  // {
-  //   id: 1,
-  //   name: "Harry Potter",
-  //   house: "Gryffindor"
-  // },
-  // {
-  //   id: 2,
-  //   name: "Draco Malfoy",
-  //   house: "Slytherin"
-  // },
-  // {
-  //   id: 3,
-  //   name: "Cedric Diggery",
-  //   house: "Hufflepuff"
-  // },
-  // {
-  //   id: 4,
-  //   name: "Cho Chang",
-  //   house: "Ravenclaw"
-  // },
-  // {
-  //   id: 5,
-  //   name: "Neville Longbottom",
-  //   house: "Gryffindor"
-  // },
-  // {
-  //   id: 6,
-  //   name: "Luna Lovegood",
-  //   house: "Ravenclaw"
-  // }
+  {
+    id: 1,
+    name: "Harry Potter",
+    house: "Gryffindor"
+  },
+  {
+    id: 2,
+    name: "Draco Malfoy",
+    house: "Slytherin"
+  },
+  {
+    id: 3,
+    name: "Cedric Diggery",
+    house: "Hufflepuff"
+  },
+  {
+    id: 4,
+    name: "Cho Chang",
+    house: "Ravenclaw"
+  },
+  {
+    id: 5,
+    name: "Neville Longbottom",
+    house: "Gryffindor"
+  },
+  {
+    id: 6,
+    name: "Luna Lovegood",
+    house: "Ravenclaw"
+  }
 ]
 
 const expelledStudents = []
@@ -106,13 +106,28 @@ const filter = (house) => {
 
 houseButtons.addEventListener("click", (event) => {
   const id = event.target.id
-  const possibleHouses = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
+  // const possibleHouses = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
+  const possibleHouses = []
+
+//   if(id === "All"){
+//     renderToDom(pets)
+//   } else if(possibleHouses.includes(id)){
+//     filter(id)
+//   }
+// })
 
   if(id === "All"){
     renderToDom(students)
-  } else if (possibleHouses.includes(id)){
-    filter(id)}
-
+  } else if(filter(id)){
+    possibleHouses.push(id)
+  }
+   renderToDom(possibleHouses)
+})
+  //   if(id === "All"){
+  //     renderToDom(students)
+  //   } else if (possibleHouses.includes(id)){
+  //     filter(id)}
+  
 
   //   const filter1 = () => {
   //   const gryffindorArray = []
@@ -158,7 +173,7 @@ houseButtons.addEventListener("click", (event) => {
   //   renderToDom(ravenclawArray)
   // }
   
-})
+
 
 form.addEventListener("submit", (event) => {
   event.preventDefault()
